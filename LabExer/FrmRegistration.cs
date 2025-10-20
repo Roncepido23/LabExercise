@@ -41,30 +41,39 @@ namespace LabExer
         {
             try
             {
-                string studentNo = txtBoxStudentNo.Text.Trim();
-                string lastName = txtBoxLastName.Text.Trim();
-                string firstName = txtBoxFirstName.Text.Trim();
-                string middleInitial = txtBoxMiddleInitial.Text.Trim();
-                string age = txtBoxAge.Text.Trim();
-                string birthday = dtBirthday.Text.Trim();
-                string program = cbBoxProgram.Text.Trim();
-                string gender = cbBoxGender.Text.Trim();
-                string contact = txtBoxContactNo.Text.Trim();
-
-                if (string.IsNullOrWhiteSpace(studentNo) || string.IsNullOrWhiteSpace(lastName) ||
-                    string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(age) ||
-                    string.IsNullOrWhiteSpace(program) || string.IsNullOrWhiteSpace(gender) ||
-                    string.IsNullOrWhiteSpace(contact))
-                {
-                    MessageBox.Show("Please complete all fields before registering.", "Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
+                
                 string folderPath = @"C:\MyRegistrationFiles";
                 Directory.CreateDirectory(folderPath);
 
+                
+                string studentNo = txtBoxStudentNo.Text.Trim();
+                string firstName = txtBoxFirstName.Text.Trim();
+                string lastName = txtBoxLastName.Text.Trim();
+                string middleInitial = txtBoxMiddleInitial.Text.Trim();
+                string age = txtBoxAge.Text.Trim();
+                string birthday = dtBirthday.Text.Trim();
+                string gender = cbBoxGender.Text.Trim();
+                string program = cbBoxProgram.Text.Trim();
+                string contact = txtBoxContactNo.Text.Trim();
+
+               
+                if (string.IsNullOrWhiteSpace(studentNo) ||
+                    string.IsNullOrWhiteSpace(lastName) ||
+                    string.IsNullOrWhiteSpace(firstName) ||
+                    string.IsNullOrWhiteSpace(age) ||
+                    string.IsNullOrWhiteSpace(program) ||
+                    string.IsNullOrWhiteSpace(gender) ||
+                    string.IsNullOrWhiteSpace(contact))
+                {
+                    MessageBox.Show("Please complete all fields before registering.",
+                                    "Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                
                 string filePath = Path.Combine(folderPath, studentNo + ".txt");
 
+                
                 string info =
                     "STUDENT REGISTRATION DETAILS" + Environment.NewLine +
                     "-------------------------------------" + Environment.NewLine +
@@ -80,17 +89,22 @@ namespace LabExer
                     "-------------------------------------" + Environment.NewLine +
                     "Registered on: " + DateTime.Now.ToString("MMMM dd, yyyy hh:mm tt");
 
-
+                
                 File.WriteAllText(filePath, info);
 
-                MessageBox.Show("Registration saved successfully!\nFile created at: " + filePath, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+                MessageBox.Show("Registration saved successfully!\nFile created at: " + filePath,
+                                "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                
                 System.Diagnostics.Process.Start("notepad.exe", filePath);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while saving: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred while saving: " + ex.Message,
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
     }
 }
