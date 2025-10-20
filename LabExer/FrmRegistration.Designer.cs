@@ -177,7 +177,7 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegister.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegister.Location = new System.Drawing.Point(278, 334);
+            this.btnRegister.Location = new System.Drawing.Point(273, 333);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(154, 50);
             this.btnRegister.TabIndex = 10;
