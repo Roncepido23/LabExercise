@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLab1));
             this.txtInput = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnRegistration = new System.Windows.Forms.Button();
@@ -36,18 +35,21 @@
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(45, 47);
+            this.txtInput.Location = new System.Drawing.Point(55, 62);
+            this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(311, 20);
+            this.txtInput.Size = new System.Drawing.Size(311, 53);
             this.txtInput.TabIndex = 0;
             // 
             // btnCreate
             // 
-            this.btnCreate.BackColor = System.Drawing.Color.Thistle;
+            this.btnCreate.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCreate.Location = new System.Drawing.Point(157, 105);
+            this.btnCreate.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCreate.Location = new System.Drawing.Point(146, 134);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 23);
+            this.btnCreate.Size = new System.Drawing.Size(128, 44);
             this.btnCreate.TabIndex = 1;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = false;
@@ -55,11 +57,13 @@
             // 
             // btnRegistration
             // 
-            this.btnRegistration.BackColor = System.Drawing.Color.Thistle;
+            this.btnRegistration.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegistration.Location = new System.Drawing.Point(157, 146);
+            this.btnRegistration.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistration.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRegistration.Location = new System.Drawing.Point(164, 184);
             this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistration.Size = new System.Drawing.Size(93, 30);
             this.btnRegistration.TabIndex = 2;
             this.btnRegistration.Text = "Registration";
             this.btnRegistration.UseVisualStyleBackColor = false;
@@ -69,9 +73,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(405, 204);
+            this.ClientSize = new System.Drawing.Size(418, 288);
             this.Controls.Add(this.btnRegistration);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.txtInput);
