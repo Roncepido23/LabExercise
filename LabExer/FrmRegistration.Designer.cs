@@ -222,7 +222,7 @@
             // 
             // txtBoxContactNo
             // 
-            this.txtBoxContactNo.Location = new System.Drawing.Point(508, 258);
+            this.txtBoxContactNo.Location = new System.Drawing.Point(495, 254);
             this.txtBoxContactNo.Name = "txtBoxContactNo";
             this.txtBoxContactNo.Size = new System.Drawing.Size(137, 20);
             this.txtBoxContactNo.TabIndex = 16;
