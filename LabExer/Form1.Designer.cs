@@ -62,7 +62,7 @@
             this.btnRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegistration.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistration.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegistration.Location = new System.Drawing.Point(164, 184);
+            this.btnRegistration.Location = new System.Drawing.Point(163, 193);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Size = new System.Drawing.Size(93, 30);
             this.btnRegistration.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(418, 259);
+            this.ClientSize = new System.Drawing.Size(418, 245);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegistration);
             this.Controls.Add(this.btnCreate);
