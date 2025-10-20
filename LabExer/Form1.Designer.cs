@@ -31,6 +31,7 @@
             this.txtInput = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnRegistration = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtInput
@@ -69,13 +70,25 @@
             this.btnRegistration.UseVisualStyleBackColor = false;
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(48, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 41);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Create File";
+            // 
             // FrmLab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(418, 288);
+            this.ClientSize = new System.Drawing.Size(418, 259);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegistration);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.txtInput);
@@ -91,6 +104,7 @@
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnRegistration;
+        private System.Windows.Forms.Label label1;
     }
 }
 

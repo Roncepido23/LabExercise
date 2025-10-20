@@ -58,7 +58,7 @@
             this.btnOkay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOkay.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOkay.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnOkay.Location = new System.Drawing.Point(138, 116);
+            this.btnOkay.Location = new System.Drawing.Point(135, 116);
             this.btnOkay.Name = "btnOkay";
             this.btnOkay.Size = new System.Drawing.Size(109, 40);
             this.btnOkay.TabIndex = 2;
